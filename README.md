@@ -29,6 +29,6 @@ Magic Mirror config/config.js
 - [ ] Show platform data if available
 - [ ] Show status of trips if available (cancellations)
 - [ ] Select multiple stops as one stop (large stations)
-- [ ] Calculate distance to stop from current cordinates
+- [ ] Calculate distance and time to stop from current cordinates
 - [ ] Display warning if traveltime to stop nears route arrivaltime
 - [ ] Work on UI look
