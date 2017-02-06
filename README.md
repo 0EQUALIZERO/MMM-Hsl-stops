@@ -15,6 +15,7 @@ Data from HSL Digitransit Development.
 - [ ] Select multiple stops as one stop (large stations)
 - [ ] Calculate distance and time to stop from current coordinates
 - [ ] Display warning if traveltime to stop nears route arrivaltime
+- [ ] Favourite trip, show times for multiples routes along favourite journey
 - [ ] Work on UI look
 
 Magic Mirror config/config.js
