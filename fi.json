@@ -1,0 +1,11 @@
+{
+	"LOADING":				"Käynnistetään &hellip;",
+	"STARTINGMODULE":		"Moduulin aktivointi",
+	"NOW":					"Nyt",
+	"1MIN":					"Minuutti",
+	"MINUTES":				"minuuttia",
+	"LINEHEADER":			"Reitti",
+	"DESTINATIONHEADER":	"Määränpää",
+	"PLATFORMHEADER":		"Laituri",
+	"TIMEHEADER":			"Aika"
+}
