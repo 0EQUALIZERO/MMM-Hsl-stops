@@ -20,3 +20,15 @@ Magic Mirror config/config.js
 },
 ```
 ![alt tag](https://raw.githubusercontent.com/0EQUALIZERO/MMM-Hsl-stops/master/images/screenshot.png)
+
+### TODO for this Module
+
+- [ ] List multiple stops
+- [ ] Filter lines in on stop
+- [ ] Get HSL's own icons
+- [ ] Show platform data if available
+- [ ] Show status of trips if available (cancellations)
+- [ ] Select multiple stops as one stop (large stations)
+- [ ] Calculate distance to stop from current cordinates
+- [ ] Display warning if traveltime to stop nears route arrivaltime
+- [ ] Work on UI look
