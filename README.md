@@ -6,7 +6,7 @@ Data from HSL Digitransit Development, can be changed from config.js to producti
 [ Installation and Configuration documentation to be added soon ]
 
 Magic Mirror config/config.js
-
+```
 {
   module: 'hsl_stops',
   position: 'top_right',
@@ -18,3 +18,4 @@ Magic Mirror config/config.js
     apiUrl: 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql' // HSL digirtransit API url
   }
 },
+```
