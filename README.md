@@ -11,7 +11,7 @@ Data from HSL Digitransit Development.
 - [ ] Filter routes from stop
 - [ ] Get HSL's own icons
 - [ ] Show platform data if available
-- [ ] Display number of stop if available (code)
+- [ ] Display number of the stop if available (code in HSL data)
 - [ ] Show status of trips if available (cancellations)
 - [ ] Select multiple stops as one stop (large stations)
 - [ ] Calculate distance and time to stop from current coordinates
