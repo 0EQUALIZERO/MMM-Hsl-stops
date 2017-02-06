@@ -19,3 +19,4 @@ Magic Mirror config/config.js
   }
 },
 ```
+![alt tag](https://raw.githubusercontent.com/0EQUALIZERO/MMM-Hsl-stops/master/images/screenshot.png)
