@@ -1,7 +1,7 @@
 # MMM-Hsl-stops
 Magic Mirror Module for Helsinki region public transport stops-data
 
-Data from HSL Digitransit.
+Data from HSL Digitransit API.
 
 
 ### TODO for this Module
