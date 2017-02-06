@@ -1,0 +1,28 @@
+th,td {text-align:left;font-size:0.75em;}
+tr.realtime {color:#46b32a;}
+tr.realtime span.fa-stack {
+    font-size:0.5em; position: relative;padding-left:1em;
+}
+
+tr.realtime i.fa-circle-o-notch{
+    font-size:1.5em!important; position: absolute;left:0.28em;top:-0.20em;
+}
+
+div.toStop {float:right;font-size:0.75em;}
+div.stopName {float:left;}
+div.routes {clear:both;}
+
+i.fa {margin-right:0.5em;}
+i.fa-bus {color:#007ac9;}
+i.tram {color:#00985f!important;}
+i.fa-subway {color:#ff6319;}
+i.fa-train {color:#8c4799;}
+i.fa-ferry {color:#00b9e4;}
+i.fa-plane {color:#fff;}
+i.fa-rocket {color:red;}
+i.fa-bicycle {color:#fbb800;}
+i.fa-hand-peace-o {color:#6ba3af;}
+i.fa, tr.realtime i.fa {font-size:1.0em;}
+caption div.routes {font-size: 0.5em;}
+caption i.fa-bus {margin:0 0.5em 0 0.5em;}
+caption {text-align:left;}

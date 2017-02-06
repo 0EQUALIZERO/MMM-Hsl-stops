@@ -1,0 +1,15 @@
+{
+  "name": "hsl_stops",
+  "version": "0.0.1",
+  "main": "hsl_stops.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Magnus Huldén",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "graphql": "0.9.1",
+  }
+}
