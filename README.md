@@ -8,7 +8,7 @@ Data from HSL Digitransit Development.
 
 - [ ] Installation and configuration documentation
 - [ ] List multiple stops
-- [ ] Filter lines in on stop
+- [ ] Filter routes from stop
 - [ ] Get HSL's own icons
 - [ ] Show platform data if available
 - [ ] Show status of trips if available (cancellations)
