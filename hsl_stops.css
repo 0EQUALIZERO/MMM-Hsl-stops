@@ -3,11 +3,12 @@ td.time {text-align:right;font-size:1em;padding-left:10px;}
 th {text-align:left;font-size:0.75em;}
 th.time {text-align:right;}
 tr.realtime td {color:#46b32a;}
+tr.realtime.outatime td {color:#333!important;}
 tr.realtime td.timeNextNotRealTime{color:#ccc;}
 td.timeNextRealTime {color:#46b32a;}
 tr {line-height: 1.5em;}
 tr td:first-child {
-	padding-right:10px;
+    padding-right:10px;
 }
 tr.realtime span.fa-stack {
     font-size:0.5em; position: relative;padding-left:1em;
@@ -108,10 +109,6 @@ td.timeNextRealTime svg.realtime{
 svg.realtime-icon {
     -webkit-transform: translateZ(0);
     transform: translateZ(0)
-}
-
-#icon-icon_realtime {
-    color: #3f8600
 }
 
 #icon-icon_realtime path {
@@ -221,16 +218,16 @@ tr.outatime {
 
 div.toStop {float:right;font-size:0.6em;}
 div.stopName {
-	float:left;
+    float:left;
 }
 span.stopCode {
-	font-size:0.5em;
-	border:1px solid;
-	padding:1px;
-	padding-right:2px;
-	line-height:0.5em;
-	margin-left:5px;
-	vertical-align: super;
+    font-size:0.5em;
+    border:1px solid;
+    padding:1px;
+    padding-right:2px;
+    line-height:0.5em;
+    margin-left:5px;
+    vertical-align: super;
 }
 div.routes {clear:both;}
 
@@ -259,8 +256,8 @@ caption {text-align:left;}
 .dimmed > svg.icon {fill:#666!important;}
 
 .routes div{
-	padding-right:10px;
-	white-space:nowrap;
+    padding-right:10px;
+    white-space:nowrap;
 }
 .routes span > .icon {
  width:0.35em;
@@ -273,7 +270,7 @@ caption {text-align:left;}
 div.route {float:left;}
 
 td > .icon {
-	padding-right:5px;
+    padding-right:5px;
 }
 
 .airplane {
@@ -317,6 +314,12 @@ td > .icon {
 }
 .realtime {
  color:#3f8600;
+}
+.outatime .realtime  {
+ color:#333;
+}
+.outatime .icon {
+ color:#333!important;
 }
 .to {
  color:#f092cd;

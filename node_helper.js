@@ -7,7 +7,7 @@
 
 var NodeHelper = require("node_helper");
 var request = require('request');
-var debug = false;
+var debug = true;
 var moment = require('moment');
 
 
@@ -28,6 +28,7 @@ module.exports = NodeHelper.create({
 		}
 		if(debug){console.log("DEBUG: Filtering trips with routeIdFilter");};
 		var obj = this.filterRoutes(obj,filter);
+		var obj = this.filterTimes(obj,timeToStop);
 		//if(debug){console.log("DEBUG: Filtering times by timeToStop");};
 		return obj;
 	},
