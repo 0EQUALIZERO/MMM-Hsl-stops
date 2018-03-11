@@ -31,7 +31,7 @@ https://github.com/CatoAntonsen/MMM-Ruter
 ## Add to Config.js
 ```
 {
-	module: 'MMM-HSL-DEV',
+	module: 'MMM-Hsl-stops',
 	position: 'top_right',
 	config: {
 		stopId: 'HSL:1173148',  // Id of the stop you want to display, give id test to use test data JSON
