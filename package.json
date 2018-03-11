@@ -1,15 +1,17 @@
 {
-  "name": "hsl_stops",
-  "version": "0.0.1",
-  "main": "hsl_stops.js",
+  "name": "MMM-Hsl-stops",
+  "author": "Magnus Huldén",
+  "version": "0.0.2",
+  "license": "MIT",
+  "description": "Hsl stops fo Magic Mirror",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0EQUALIZER0/MMM-Hsl-stops"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Magnus Huldén",
-  "license": "MIT",
-  "devDependencies": {
-  },
   "dependencies": {
-    "graphql": "0.9.1",
+    "graphql": "0.9.1"
   }
 }

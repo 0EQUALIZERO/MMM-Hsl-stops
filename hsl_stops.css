@@ -1,15 +1,237 @@
-th,td {text-align:left;font-size:0.75em;}
-tr.realtime {color:#46b32a;}
+td {text-align:left;font-size:1em;}
+td.time {text-align:right;font-size:1em;padding-left:10px;}
+th {text-align:left;font-size:0.75em;}
+th.time {text-align:right;}
+tr.realtime td {color:#46b32a;}
+tr.realtime td.timeNextNotRealTime{color:#ccc;}
+td.timeNextRealTime {color:#46b32a;}
+tr {line-height: 1.5em;}
+tr td:first-child {
+	padding-right:10px;
+}
 tr.realtime span.fa-stack {
     font-size:0.5em; position: relative;padding-left:1em;
 }
 
-tr.realtime i.fa-circle-o-notch{
-    font-size:1.5em!important; position: absolute;left:0.28em;top:-0.20em;
+tr.realtime svg.realtime{
+    font-size:1.0em!important;
+    vertical-align: top;
+    margin-top:5px;
+    padding-left:5px;
 }
 
-div.toStop {float:right;font-size:0.75em;}
-div.stopName {float:left;}
+td.timeNextRealTime svg.realtime{
+    font-size:1.0em!important;
+    vertical-align: top;
+    margin-top:5px;
+    padding-left:5px;
+}
+
+@-webkit-keyframes realtimeInnerArch {
+    0% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes realtimeInnerArch {
+    0% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes realtimeOuterArch {
+    0% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    80% {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes realtimeOuterArch {
+    0% {
+        opacity: 1
+    }
+    20% {
+        opacity: 1
+    }
+    40% {
+        opacity: 0
+    }
+    60% {
+        opacity: 0
+    }
+    80% {
+        opacity: 1
+    }
+    to {
+        opacity: 1
+    }
+}
+
+svg.realtime-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+#icon-icon_realtime {
+    color: #3f8600
+}
+
+#icon-icon_realtime path {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    fill: currentColor
+}
+
+#icon-icon_realtime path.path1 {
+    -webkit-animation-name: realtimeInnerArch;
+    animation-name: realtimeInnerArch
+}
+
+#icon-icon_realtime path.path2 {
+    -webkit-animation-name: realtimeOuterArch;
+    animation-name: realtimeOuterArch
+}
+
+@-webkit-keyframes locationIcon {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        opacity: .4
+    }
+    75% {
+        opacity: .1
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3)
+    }
+}
+
+@keyframes locationIcon {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    50% {
+        opacity: .4
+    }
+    75% {
+        opacity: .1
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3)
+    }
+}
+
+tr.alert td {
+    font-size:0.6em!important;
+    color:aqua;
+    line-height:1.0em;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.3;
+    border-width: 0px 1px 1px 1px;
+    border-style:solid;
+    border-color: aqua;
+    padding:2px;
+    text-align:center;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.3;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.3;
+    }
+}
+
+tr.hurry {
+    color:aqua;
+    font-weight: strong;
+    line-height:1.0em;
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.3;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.3;
+    }
+}
+tr.outatime {
+    color:#333;
+}
+
+div.toStop {float:right;font-size:0.6em;}
+div.stopName {
+	float:left;
+}
+span.stopCode {
+	font-size:0.5em;
+	border:1px solid;
+	padding:1px;
+	padding-right:2px;
+	line-height:0.5em;
+	margin-left:5px;
+	vertical-align: super;
+}
 div.routes {clear:both;}
 
 i.fa {margin-right:0.5em;}
@@ -23,6 +245,107 @@ i.fa-rocket {color:red;}
 i.fa-bicycle {color:#fbb800;}
 i.fa-hand-peace-o {color:#6ba3af;}
 i.fa, tr.realtime i.fa {font-size:1.0em;}
-caption div.routes {font-size: 0.5em;}
-caption i.fa-bus {margin:0 0.5em 0 0.5em;}
+caption div.routes {font-size: 0.6em;}
+caption span.icon-icon_bus {margin:0 0.5em 0 0.5em;}
 caption {text-align:left;}
+
+.icon {
+ width:0.4em;
+ height:0.4em;
+ line-height:1.25em;
+ fill:currentColor;
+}
+
+.dimmed > svg.icon {fill:#666!important;}
+
+.routes div{
+	padding-right:10px;
+	white-space:nowrap;
+}
+.routes span > .icon {
+ width:0.35em;
+ height:0.35em;
+ line-height:0.5em;
+ fill:currentColor;
+ padding-right:5px;
+}
+
+div.route {float:left;}
+
+td > .icon {
+	padding-right:5px;
+}
+
+.airplane {
+ color:#0046ad;
+}
+.bus {
+ color:#007ac9;
+}
+.map .call {
+ color:#fff;
+}
+.tram {
+ color:#00985f;
+}
+.subway {
+ color:#ff6319;
+}
+.rail {
+ color:#8c4799;
+}
+.ferry {
+ color:#00b9e4;
+}
+.car {
+ color:#333;
+}
+.citybike,.citybike_walk {
+ color:#f2b62d;
+}
+.walk {
+ color:#6ba3af;
+}
+.bicycle,.bicycle_walk {
+ color:#64be14;
+}
+.via {
+ color:#6ba3af;
+}
+.from {
+ color:#64be14;
+}
+.realtime {
+ color:#3f8600;
+}
+.to {
+ color:#f092cd;
+}
+.viewpoint {
+ color:#007ac9;
+}
+.gray,.gray p {
+ color:#666;
+}
+
+.loader {
+  margin:20px;
+  border: 8px solid #000;
+  border-radius: 50%;
+  border-top: 8px solid #fff;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

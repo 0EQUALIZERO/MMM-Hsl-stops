@@ -7,5 +7,8 @@
 	"LINEHEADER":			"Line",
 	"DESTINATIONHEADER":	"Destination",
 	"PLATFORMHEADER":		"Platform",
-	"TIMEHEADER":			"Time"
+	"TIMECURRENT":			"Leaves",
+	"TIMENEXT":				"Next",
+	"ALERT":				"Alert",
+	"SETAPI":				"Please set the correct API URL in the config of: "
 }

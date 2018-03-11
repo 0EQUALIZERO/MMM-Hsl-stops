@@ -7,5 +7,8 @@
 	"LINEHEADER":			"Linje",
 	"DESTINATIONHEADER":	"Destination",
 	"PLATFORMHEADER":		"Platform",
-	"TIMEHEADER":			"Tid"
+	"TIMECURRENT":			"Avgår",
+	"TIMENEXT":				"Nästa",
+	"ALERT":				"Obs",
+	"SETAPI":				"Ställ in API URL konfigurationen i modulen: "
 }
