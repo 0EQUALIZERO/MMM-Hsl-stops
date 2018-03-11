@@ -7,7 +7,7 @@
 
 var NodeHelper = require("node_helper");
 var request = require('request');
-var debug = true;
+var debug = false;
 var moment = require('moment');
 
 
@@ -176,7 +176,7 @@ module.exports = NodeHelper.create({
 	            if (error) {
 	               if(debug){console.log("DEBUG: Error: " + error)} // Show the ERROR
 	            }
-	            if(debug){console.log("DEBUG: Response: " + body)}; // DEBUG RESPONSE
+	            //if(debug){console.log("DEBUG: Response: " + body)}; // DEBUG RESPONSE
 	        });
 	    }
 	},
