@@ -29,7 +29,7 @@ https://github.com/CatoAntonsen/MMM-Ruter
 - [x] Work on UI look
 
 ## Add to Config.js
-
+```
 {
 	module: 'MMM-HSL-DEV',
 	position: 'top_right',
@@ -49,6 +49,7 @@ https://github.com/CatoAntonsen/MMM-Ruter
 		apiUrl: 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql' // HSL digirtransit API url                          
 	}	                            
 },
+```
 
 ## Configuration
 
