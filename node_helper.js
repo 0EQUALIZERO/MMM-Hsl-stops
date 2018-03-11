@@ -7,7 +7,7 @@
 
 var NodeHelper = require("node_helper");
 var request = require('request');
-var debug = true;
+var debug = false;
 var moment = require('moment');
 
 
