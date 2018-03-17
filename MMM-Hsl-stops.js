@@ -28,7 +28,7 @@ Module.register("MMM-Hsl-stops",{
         var svg = document.createElementNS('http://www.w3.org/2000/svg','svg');
         svg.setAttributeNS(null, "class", "icon large large-icon " + glyph);
         var use = document.createElementNS('http://www.w3.org/2000/svg', "use");
-        use.setAttributeNS("http://www.w3.org/1999/xlink", "href", "modules/MMM-HSL-DEV/images/hsl_icons.svg#icon-icon_" + glyph);
+        use.setAttributeNS("http://www.w3.org/1999/xlink", "href", "modules/MMM-Hsl-stops/images/hsl_icons.svg#icon-icon_" + glyph);
         svg.appendChild(use);
  
         return(svg);
