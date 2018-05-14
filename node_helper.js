@@ -14,6 +14,7 @@ var moment = require('moment');
 
 module.exports = NodeHelper.create({
 	updateTimer: "",
+	retryInterval: 30 * 1000, // The time to wait before retrying after a failed connection to HSL
 	start: function() {
 		this.timesUpdated = 1;
         this.started = false;
@@ -174,8 +175,12 @@ module.exports = NodeHelper.create({
 						stopTimes: stopTimesObj
 					});
 	            }
-	            if (error) {
-	               if(debug){console.log("DEBUG: Error: " + error)} // Show the ERROR
+				else {
+					if(debug){console.log("DEBUG: Error: " + error)} // Show the ERROR
+					clearTimeout(this.updateTimer);
+                    this.updateTimer = setTimeout(function() {
+                        self.updateTransportData(payload);
+                    }, self.retryInterval);
 	            }
 	            //if(debug){console.log("DEBUG: Response: " + body)}; // DEBUG RESPONSE
 	        });
