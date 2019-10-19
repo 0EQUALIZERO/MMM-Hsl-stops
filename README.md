@@ -46,7 +46,8 @@ https://github.com/CatoAntonsen/MMM-Ruter
 		timeRange: 12 * 60 * 60, // Range of trips to be polled in seconds
 		timeToStop: 8, // Time to get to the stop in minutes
 		humanizeTimeTreshold: 15,
-		apiUrl: 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql' // Finnish National Digitransit API url                          
+		apiUrl: 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql', // Finnish National Digitransit API url
+		hideNext: true
 	}	                            
 },
 ```
