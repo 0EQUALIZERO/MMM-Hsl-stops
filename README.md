@@ -1,8 +1,8 @@
 # MMM-Hsl-stops
 
-A Magic Mirror Module for Helsinki region public transport stops-data
+A Magic Mirror Module for Finnish National public transport stops-data
 
-Data from HSL Digitransit API.
+Data from Finnish National Digitransit API.
 
 Parts borrowed from similar projects like:
 https://github.com/lgmorand/MMM-Ratp
@@ -34,7 +34,7 @@ https://github.com/CatoAntonsen/MMM-Ruter
 	module: 'MMM-Hsl-stops',
 	position: 'top_right',
 	config: {
-		stopId: 'HSL:1173148',  // Id of the stop you want to display, give id test to use test data JSON
+		stopId: 'HSL:1173148',  // FeedId and StopId of the stop you want to display, give id test to use test data JSON
 		debug: false, // Increase log output
 		testMode: false, // Activate module in test-mode using provided static JSON test data
 		testJSON: 'test',
@@ -46,15 +46,17 @@ https://github.com/CatoAntonsen/MMM-Ruter
 		timeRange: 12 * 60 * 60, // Range of trips to be polled in seconds
 		timeToStop: 8, // Time to get to the stop in minutes
 		humanizeTimeTreshold: 15,
-		apiUrl: 'https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql' // HSL digirtransit API url                          
+		apiUrl: 'https://api.digitransit.fi/routing/v1/routers/finland/index/graphql', // Finnish National Digitransit API url
+		hideNext: true
 	}	                            
 },
 ```
 
 ## Configuration
 
-- stopID's can be explored with GraphiQL @ https://api.digitransit.fi/graphiql/hsl.
+- feedID's (different transportation companies) can be explored from [Digitransit's site].(https://api.digitransit.fi/graphiql/finland?query=%7B%0A%20%20feeds%20%7B%0A%20%20%20%20feedId%0A%20%20%20%20agencies%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 - stopID's can also be browsed in website: https://beta.digitransit.fi, select a stop -> open stop in window -> stopId can be copied from url and appended to HSL:### in stopID field
+- HSL stopID's can be explored with GraphiQL @ https://api.digitransit.fi/graphiql/hsl.
 - Translations can be found in your ~/MagicMirror/modules/MMM-Hsl-stops/translations directory, translations for English,Finnish and Swedish are provided and can be modified by updating the en.json,fi.json and sv.json -files.
 
 ## Config Options

@@ -215,7 +215,11 @@ Module.register("MMM-Hsl-stops",{
         thead.appendChild(thLine);
         thead.appendChild(thDestination);
         thead.appendChild(thTimeCurrent);
-        thead.appendChild(thTimeNext);
+
+        if(!this.config.hideNext) {
+            thead.appendChild(thTimeNext);
+        }
+
         
         return thead;
     },
@@ -243,16 +247,18 @@ Module.register("MMM-Hsl-stops",{
         }
         tdTimeCurrent.appendChild(document.createTextNode(this.formatTime(time)));
 
-        var tdTimeNext = document.createElement("td");
-        if (!stopTimes.trip.nextrealtime){
-            tdTimeNext.className = "time light timeNext timeNextNotRealTime";
+        if(!this.config.hideNext) {
+            var tdTimeNext = document.createElement("td");
+            if (!stopTimes.trip.nextrealtime){
+                tdTimeNext.className = "time light timeNext timeNextNotRealTime";
+            }
+            else {
+                tdTimeNext.appendChild(nexticonRealTime);
+                tdTimeNext.className = "time light timeNext timeNextRealTime";
+            }
+            var timeNext = moment.unix(stopTimes.serviceDay+stopTimes.trip.next);
+            tdTimeNext.appendChild(document.createTextNode(this.formatTime(timeNext)));
         }
-        else {
-            tdTimeNext.appendChild(nexticonRealTime);
-            tdTimeNext.className = "time light timeNext timeNextRealTime";
-        }
-        var timeNext = moment.unix(stopTimes.serviceDay+stopTimes.trip.next);
-        tdTimeNext.appendChild(document.createTextNode(this.formatTime(timeNext)));
         
         var tr = document.createElement("tr");
         if (stopTimes.realtime){
@@ -271,7 +277,9 @@ Module.register("MMM-Hsl-stops",{
         tr.appendChild(tdLine);
         tr.appendChild(tdDestination);
         tr.appendChild(tdTimeCurrent);
-        tr.appendChild(tdTimeNext);
+        if(!this.config.hideNext) {
+            tr.appendChild(tdTimeNext);
+        }
         return tr;
     },
 
